@@ -1,0 +1,294 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(75, 72, 72);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+/* header */
+header {
+  background-color: #1f2023;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5px;
+}
+
+header.navbar-container {
+  max-width: 12000px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  z-index: 999;
+}
+
+header.navbar-container .logo img {
+  width: 60px;
+  height: 60px;
+}
+
+header.navbar-container .logo h2 {
+  padding-left: 5px;
+  display: flex;
+  color: white;
+  font-weight: bold;
+}
+
+header.navbar-container .logo {
+  display: flex;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list ul {
+  align-items: center;
+  display: flex;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: white;
+  color: #000000;
+}
+
+header.navbar-container .nav-list .button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+
+header.navbar-container .nav-list button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+}
+
+header.navbar-container .nav-list button:hover {
+  background-color: white;
+  color: #000000;
+  cursor: pointer;
+}
+
+/* Home */
+h1.title {
+  /* display: block; */
+  color: black;
+  text-align: center;
+  margin-top: 60px;
+}
+
+div.content {
+  display: flex;
+  justify-content: center;
+  margin: 60px 250px;
+  gap: 100px;
+}
+
+.content-1 {
+  justify-content: center;
+}
+
+div.content .content-1 {
+  align-items: center;
+}
+
+div.content .content-1 img {
+  width: 260px;
+  border-radius: 12px;
+}
+
+div.content .content-1 p {
+  width: 260px;
+  text-align: justify;
+}
+
+div.social {
+  display: flex;
+  justify-content: space-around;
+  width: 260px;
+}
+
+div.social p {
+  width: 80px;
+}
+
+div.social ul {
+  align-items: center;
+  gap: 2rem 1rem;
+  display: flex;
+  padding: 0;
+}
+
+div.social li {
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.fa {
+  padding: 7.5px;
+  font-size: 22.5px;
+  width: 37.5px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background-color: #000000;
+  color: white;
+}
+
+.fa-facebook {
+  background-color: #000000;
+  color: white;
+}
+
+.fa-twitter {
+  background-color: #000000;
+  color: white;
+}
+
+div.content .content-2 {
+  align-items: center;
+  margin-top: 45px;
+}
+
+div.content .content-2 img {
+  width: 446px;
+  border-radius: 12px;
+}
+
+div.content .content-2 p {
+  width: 446px;
+  text-align: justify;
+}
+
+.slider {
+  width: 446px;
+  max-width: 100vw;
+  height: 300px;
+  border-radius: 12px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .list {
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+
+.slider .list img {
+  width: 446px;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider .buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.slider .buttons button:hover {
+  background-color: white;
+  color: #000000;
+  cursor: pointer;
+}
+
+.slider .dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slider .dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.slider .dots li.active {
+  width: 30px;
+}
+
+.slider .dots li:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    height: 400px;
+  }
+}
